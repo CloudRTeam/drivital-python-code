@@ -1,16 +1,24 @@
-# This is a sample Python script.
+import cv2 as cv
+import numpy as np
+from scipy.spatial import distance as dist
+from imutils import face_utils
+from imutils.video import FileVideoStream
+from imutils.video import  VideoStream
+import argparse
+import imutils
+import time
+import dlib
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+cameraID = 0
 
+#creating camera object
+camera = cv.VideoCapture(cameraID)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+while True:
+    #getting frame from camera
+    ret, frame = camera.read()
 
+    #showing the frame on the screen
+    cv.imshow('Frame', frame)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    #defining the key
