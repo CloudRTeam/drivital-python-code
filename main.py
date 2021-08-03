@@ -1,6 +1,6 @@
 # USAGE:
 # python main.py --shape-predictor shape_predictor_68_face_landmarks.dat
-# python main.py --shape-predictor shape_predictor_68_face_landmarks.dat
+# python main.py --shape-predictor shape_predictor_68_face_landmarks.dat --video "file-video"
 # this code work for file video, live video and for raspberryPi camera
 
 import cv2
