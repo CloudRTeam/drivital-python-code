@@ -30,7 +30,6 @@ def eye_aspect_ratio(eye):
     # return the eye aspect ratio
     return ear
 
-
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--shape-predictor", required=True,
