@@ -7,7 +7,8 @@ import cv2
 import numpy as np
 from scipy.spatial import distance as dist
 from imutils import face_utils
-from imutils.video import FileVideoStream
+# this library is for video file
+# from imutils.video import FileVideoStream
 from imutils.video import VideoStream
 import argparse
 import imutils
